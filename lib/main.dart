@@ -12,13 +12,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        primaryColor: Colors.white,
+        textTheme: TextTheme(
+          headline6: TextStyle(
+            color: Colors.white,
+          ),
+        ),
         useMaterial3: true,
       ),
       home: MoovitStationDetails(),
     );
   }
 }
-
